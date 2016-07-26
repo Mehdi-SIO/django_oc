@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="/media/css/style.css"/>
+    <title>{% block title%}Mon blog{% endblock %}</title>
+  </head>
+  <body>
+    <header>Crêpes</header>
+    <nav>
+      {%block nav %}
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      {% endblock %}
+    </nav>
+    <section id="content">
+      {% block content%}{% endblock %}
+    </section>
+    <footer>&copy; Crêpes bretonnes</footer>
+  </body>
+</html>

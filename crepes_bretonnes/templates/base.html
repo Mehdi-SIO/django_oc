@@ -11,6 +11,8 @@
         <li><a href="/">Accueil</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
+
+        <li><a href="{% url 'blog.views.view_article' 42 %}"> Lien vers l'article 42</a> </li>
       {% endblock %}
     </nav>
     <section id="content">
